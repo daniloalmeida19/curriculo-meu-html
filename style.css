@@ -32,6 +32,11 @@ header img{
         color: green;
     }
 
+    h3{
+        text-align: left;
+        text-decoration: underline;
+    }
+    
     footer img{
         width:  45px;
         height: 45px; 
