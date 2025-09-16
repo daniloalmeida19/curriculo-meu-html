@@ -1,20 +1,37 @@
+@charset "UTF-8";
+
+/* Estilos Globais */
 body{
     color: white;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 5px 20px;
+    margin: 0;
+    padding: 20px;
 }
 
-ul{
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+/* Cabeçalho e Navegação (index.html) */
+nav ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    padding: 16px;    
-}
-
-a{
-    color: white;
-    text-decoration: none;
+    padding: 16px;
 }
 
 header img{
@@ -23,36 +40,90 @@ header img{
     border-radius: 50%;
     border: 5px solid blue;
 }
-
-.center{
+.center {
     text-align: center;
-    }
+}
 
-    h1{
-        color: white;
-       
-    }
+/* Conteúdo Principal (index.html) */
+main h3 {
+    text-align: left;
+    text-decoration: underline;
+}
 
-    h3{
-        text-align: left;
-        text-decoration: underline;
-    }
-    
-    footer img{
-        width:  45px;
-        height: 45px; 
-        border-radius: 50%;              
-        border: 5px solid red;
-    }
+main section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
 
-    footer{
-        display: flex;
-        justify-content: space-between;
-        list-style-type: none;
-        padding: 16px;    
+/* Seções de Conteúdo (projetos.html, contatos.html) */
+.content-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 50px;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
 
-    }
+.content-box ul {
+    list-style: none;
+    padding: 0;
+}
 
-    .cabeca{
-        text-align: center;
-    }
+.content-box li {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Estilos específicos para contatos.html */
+#contatos-list li {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+#contatos-list a {
+    color: black;
+}
+
+/* Cor específica para o link de e-mail */
+#contatos-list a.email-link {
+    color: red;
+}
+
+/* Cor específica para o texto do WhatsApp */
+.whatsapp-text {
+    color: #25D366;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer.social-links img {
+    width:  45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 5px solid red;
+}
+
+.btn-voltar {
+    display: block;
+    width: 250px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+}

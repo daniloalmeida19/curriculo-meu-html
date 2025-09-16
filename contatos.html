@@ -3,71 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="contatos.png" type="image/x-icon">
     <title>Contatos</title>
-    <style>
-        
-        body{
-            background-color: black;
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            padding: 30px;
-            border-radius: 20px;
-            width: 350px;
-            margin-left: auto;
-            margin-right: auto;
-
-        }
-
-        h1{
-            text-align: center;
-        }
-
-        li{
-            background-color: white;
-            padding: 10px;
-           }
-
-        div > img{
-            text-size-adjust: center;
-        }
-
-        footer > a{
-    text-align: center;
-    font-size: 1.0em;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: block;
-    text-decoration: none;
-    padding: 10px;
-    border: 1px solid white;
-    margin: 10px 0;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-}
-      
-        
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1 style="color: white;">Contatos</h1>
-   
-    <a href="https://wa.me/qr/2F6BWVN4MKDNJ1" target="_blank">
-        <li>Celular: 11 97118-0237 WhatsApp</li>
-    </a> <br>
+    <h1>Contatos</h1>
 
-    <div class="center"><img src="qrcode-whats.jpeg" alt="Qr code Whats" width="150"><br> <br></div>
+    <main class="content-box">
+        <ul id="contatos-list">
+            <li>
+                <a href="https://wa.me/qr/2F6BWVN4MKDNJ1" target="_blank" rel="noopener noreferrer">
+                    Celular: 11 97118-0237 <span class="whatsapp-text">WhatsApp</span>
+                </a>
+            </li>
+            <li>
+                <a class="email-link" href="mailto:danilotecnologia2023@gmail.com">danilotecnologia2023@gmail.com</a>
+            </li>
+        </ul>
+        <div class="center">
+            <img src="qrcode-whats.jpeg" alt="QR Code para WhatsApp" width="150">
+        </div>
+    </main>
 
-   
-        <li> <a href="mailto:danilotecnologia2023@gmail.com">danilotecnologia2023@gmail.com</a> </li>
-    <br>
-
-    
-<footer><a style="color: white;" href="index.html">Voltar: Pagina Principal</a></footer>
+    <footer>
+        <a class="btn-voltar" href="index.html">Voltar: Página Principal</a>
+    </footer>
 </body>
 </html>
